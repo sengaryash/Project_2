@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,600&display=swap');
+@import url(/images/hero-mobile.jpg);
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 1440px;
+    background-color: linear-gradient(135deg hsl(0, 0%, 100%) hsl(0, 100%, 98%));
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container_two {
+    margin: 0
+}
+
+#box_one {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#box_one h3 {
+    border: hsl(0, 93%, 68%);
+}
+
+span {
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+    color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans';
+}
+
+#box_two h1 {
+    text-transform: uppercase;
+    font-size: 65px;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+    font-family: 'Josefin Sans';
+}
+
+.spaceline {
+    line-height: 25px;
+}
+
+p {
+    color: hsl(0, 36%, 70%);
+    margin-top: 72px;
+    line-height: 1.8em;
+}
+
+#box_input {
+    display: inline-flex;
+    margin-top: 41px;
+    color: none;
+    width: 80%;
+}
+
+#boxes {
+    margin-left: 139px;
+    margin-right: 139px;
+    margin-top: 74px;
+}
+
+#box_two {
+    margin-top: 114px;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 15px 30px;
+    height: 55px;
+    width: 100%;
+}
+
+input:focus {
+    border-width: 2px;
+    box-shadow: 0px 0px 10px hsla(0, 36%, 70%, 0.5);
+    outline: none;
+}
+
+input::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+form.error input {
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+button {
+    background-image: linear-gradient(135%, hsl(0, 80%, 86%)hsl(0, 74%, 74%));
+    background-color: hsl(0, 74%, 74%);
+    box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: -68px;
+    padding: 15px;
+    height: 80px;
+    width: 100px;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+small {
+    color: hsl(0, 93%, 68%);
+    display: flex;
+    align-items: flex-end;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+form.error small {
+    display: block;
+}
+
+.error_icon {
+    display: none;
+}
+
+@media (max-width:790px) {
+    .finale {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    #box_one {
+        padding-bottom: 22px;
+        margin-top: -0;
+        margin-bottom: 4px;
+        margin-left: 40px;
+    }
+    .container_two {
+        background-image: url(/images/hero-mobile.jpg);
+        display: flex;
+        order: 2;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+    }
+    .container {}
+    #box_two {
+        margin-right: 220px;
+        margin-left: 50px;
+    }
+}
